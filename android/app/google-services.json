@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "218858947821",
+    "firebase_url": "https://my-hair-regimen.firebaseio.com",
+    "project_id": "my-hair-regimen",
+    "storage_bucket": "my-hair-regimen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218858947821:android:e9366389475c91c0c9f8e4",
+        "android_client_info": {
+          "package_name": "com.myhairregimen.myhairregimen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218858947821-0ngdmiopdf786443nmpfpe8rc3a1spke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwp-jct7hASl4c-4cb1IXn4xU_XytQHz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218858947821-0ngdmiopdf786443nmpfpe8rc3a1spke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
