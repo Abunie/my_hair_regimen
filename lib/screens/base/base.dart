@@ -56,7 +56,7 @@ class _BaseState extends State<Base>
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: FutureBuilder<bool>(
-          future: getData(),
+          //future: getData(),
           builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
             if (!snapshot.hasData) {
               return const SizedBox();

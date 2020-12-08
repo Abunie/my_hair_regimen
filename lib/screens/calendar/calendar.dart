@@ -1,15 +1,19 @@
 import 'package:myhairregimen/app_theme.dart';
 import 'package:myhairregimen/screens/calendar/routine_list_view.dart';
 import 'package:myhairregimen/screens/calendar/calendar_view.dart';
+import 'package:myhairregimen/screens/products/products_screen.dart';
+import 'package:myhairregimen/screens/profile/profile.dart';
+import 'package:myhairregimen/screens/notes/notes_screen.dart';
+import 'package:myhairregimen/models/tabIcon_data.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:myhairregimen/widgets/regular_app_bar.dart';
+import 'package:myhairregimen/widgets/bottom_bar_view.dart';
 
 DateTime now = DateTime.now();
 String formattedDate = DateFormat('MMMMd').format(now);
 class MyCalendar extends StatefulWidget {
   const MyCalendar({Key key, this.animationController}) : super(key: key);
-
   final AnimationController animationController;
   @override
   _MyCalendarState createState() => _MyCalendarState();
@@ -18,9 +22,10 @@ class MyCalendar extends StatefulWidget {
 class _MyCalendarState extends State<MyCalendar>
     with TickerProviderStateMixin {
   Animation<double> topBarAnimation;
-
+  AnimationController animationController;
   List<Widget> listViews = <Widget>[];
   final ScrollController scrollController = ScrollController();
+  List<TabIconData> tabIconsList = TabIconData.tabIconsList;
   double topBarOpacity = 0.0;
 
   @override
@@ -91,9 +96,11 @@ class _MyCalendarState extends State<MyCalendar>
             getMainListViewUI(),
             SizedBox(
               height: MediaQuery.of(context).padding.bottom,
-            )
+            ),
+            //bottomBar()
           ],
         ),
+        //bottomNavigationBar: bottomBar(),
       ),
     );
   }
@@ -217,6 +224,78 @@ class _MyCalendarState extends State<MyCalendar>
             );
           },
         )
+      ],
+    );
+  }
+  Widget bottomBar() {
+    return Column(
+      children: <Widget>[
+        const Expanded(
+          child: SizedBox(),
+        ),
+        BottomBarView(
+          tabIconsList: tabIconsList,
+          addClick: () {},
+          changeIndex: (int index) {
+            if (index == 0) {
+              animationController.reverse().then<dynamic>((data) {
+                if (!mounted) {
+                  return;
+                }
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyCalendar()),
+                );
+//                setState(() {
+//                  tabBody =
+//                      MyCalendar(animationController: animationController);
+//                });
+              });
+            } else if (index == 1 ) {
+              animationController.reverse().then<dynamic>((data) {
+                if (!mounted) {
+                  return;
+                }
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProductsScreen()),
+                );
+//                setState(() {
+//                  tabBody =
+//                      ProductsScreen(animationController: animationController);
+//                });
+              });
+            }else if (index == 2 ) {
+              animationController.reverse().then<dynamic>((data) {
+                if (!mounted) {
+                  return;
+                }
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Profile()),
+                );
+//                setState(() {
+//                  tabBody =
+//                      Profile();
+//                });
+              });
+            } else if (index == 3) {
+              animationController.reverse().then<dynamic>((data) {
+                if (!mounted) {
+                  return;
+                }
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NotesScreen()),
+                );
+//                setState(() {
+//                  tabBody =
+//                      NotesScreen(animationController: animationController);
+//                });
+              });
+            }
+          },
+        ),
       ],
     );
   }
