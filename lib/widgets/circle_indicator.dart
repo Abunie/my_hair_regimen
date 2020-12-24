@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:myhairregimen/models/routine.dart';
+import 'file:///C:/Users/abuni/AndroidStudioProjects/my_hair_regimen/lib/models/routine/routine.dart';
 
 import '../app_theme.dart';
 

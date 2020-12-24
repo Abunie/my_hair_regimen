@@ -168,7 +168,7 @@ class _NotesScreenState extends State<NotesScreen>
                       crossAxisSpacing: 4.0,
                     ),
                   ),
-                  bottomBar(),
+                  //bottomBar(),
                 ],
               );
             }
@@ -253,78 +253,78 @@ class _NotesScreenState extends State<NotesScreen>
 //    ));
   }
 
-  Widget bottomBar() {
-    return Column(
-      children: <Widget>[
-        const Expanded(
-          child: SizedBox(),
-        ),
-        BottomBarView(
-          tabIconsList: tabIconsList,
-          addClick: () {},
-          changeIndex: (int index) {
-            if (index == 0) {
-              animationController.reverse().then<dynamic>((data) {
-                if (!mounted) {
-                  return;
-                }
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyCalendar()),
-                );
-//                setState(() {
-//                  tabBody =
-//                      MyCalendar(animationController: animationController);
-//                });
-              });
-            } else if (index == 1 ) {
-              animationController.reverse().then<dynamic>((data) {
-                if (!mounted) {
-                  return;
-                }
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ProductsScreen()),
-                );
-//                setState(() {
-//                  tabBody =
-//                      ProductsScreen(animationController: animationController);
-//                });
-              });
-            }else if (index == 2 ) {
-              animationController.reverse().then<dynamic>((data) {
-                if (!mounted) {
-                  return;
-                }
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Profile()),
-                );
-//                setState(() {
-//                  tabBody =
-//                      Profile();
-//                });
-              });
-            } else if (index == 3) {
-              animationController.reverse().then<dynamic>((data) {
-                if (!mounted) {
-                  return;
-                }
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => NotesScreen()),
-                );
-//                setState(() {
-//                  tabBody =
-//                      NotesScreen(animationController: animationController);
-//                });
-              });
-            }
-          },
-        ),
-      ],
-    );
-  }
+//   Widget bottomBar() {
+//     return Column(
+//       children: <Widget>[
+//         const Expanded(
+//           child: SizedBox(),
+//         ),
+//         BottomBarView(
+//           tabIconsList: tabIconsList,
+//           addClick: () {},
+//           changeIndex: (int index) {
+//             if (index == 0) {
+//               animationController.reverse().then<dynamic>((data) {
+//                 if (!mounted) {
+//                   return;
+//                 }
+//                 Navigator.push(
+//                   context,
+//                   MaterialPageRoute(builder: (context) => MyCalendar()),
+//                 );
+// //                setState(() {
+// //                  tabBody =
+// //                      MyCalendar(animationController: animationController);
+// //                });
+//               });
+//             } else if (index == 1 ) {
+//               animationController.reverse().then<dynamic>((data) {
+//                 if (!mounted) {
+//                   return;
+//                 }
+//                 Navigator.push(
+//                   context,
+//                   MaterialPageRoute(builder: (context) => ProductsScreen()),
+//                 );
+// //                setState(() {
+// //                  tabBody =
+// //                      ProductsScreen(animationController: animationController);
+// //                });
+//               });
+//             }else if (index == 2 ) {
+//               animationController.reverse().then<dynamic>((data) {
+//                 if (!mounted) {
+//                   return;
+//                 }
+//                 Navigator.push(
+//                   context,
+//                   MaterialPageRoute(builder: (context) => Profile()),
+//                 );
+// //                setState(() {
+// //                  tabBody =
+// //                      Profile();
+// //                });
+//               });
+//             } else if (index == 3) {
+//               animationController.reverse().then<dynamic>((data) {
+//                 if (!mounted) {
+//                   return;
+//                 }
+//                 Navigator.push(
+//                   context,
+//                   MaterialPageRoute(builder: (context) => NotesScreen()),
+//                 );
+// //                setState(() {
+// //                  tabBody =
+// //                      NotesScreen(animationController: animationController);
+// //                });
+//               });
+//             }
+//           },
+//         ),
+//       ],
+//     );
+//   }
 }
 
 

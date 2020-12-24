@@ -1,6 +1,6 @@
 import 'package:myhairregimen/app_theme.dart';
-import 'package:myhairregimen/models/routine_data.dart';
-import 'package:myhairregimen/models/routine_list_data.dart';
+import 'file:///C:/Users/abuni/AndroidStudioProjects/my_hair_regimen/lib/models/routine/routine_data.dart';
+import 'file:///C:/Users/abuni/AndroidStudioProjects/my_hair_regimen/lib/models/routine/routine_list_data.dart';
 import 'package:myhairregimen/main.dart';
 import 'package:flutter/material.dart';
 import 'package:myhairregimen/screens/routines/details.dart';
@@ -96,7 +96,7 @@ class RoutineView extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => DetailsPage(
-                        routine: Data.routines[0],
+                        routine: Data.routines[routineListData.index],
                       )));
             },
             child: SizedBox(

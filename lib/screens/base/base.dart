@@ -1,19 +1,13 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:myhairregimen/models/product.dart';
-import 'package:myhairregimen/models/product_notifier.dart';
 import 'package:myhairregimen/models/tabIcon_data.dart';
-import 'package:myhairregimen/screens/calendar/calendar.dart';
-import 'package:myhairregimen/screens/notes/notes_screen.dart';
 import 'package:myhairregimen/screens/products/products_screen.dart';
+import 'package:myhairregimen/screens/notes/notes_screen.dart';
 import 'package:myhairregimen/screens/profile/profile.dart';
-import 'package:flutter/material.dart';
 import 'package:myhairregimen/widgets/bottom_bar_view.dart';
+import 'package:myhairregimen/screens/calendar/calendar.dart';
 import 'package:myhairregimen/app_theme.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/material.dart';
 
-/**
- * This is the base page for this project
- */
+
 class Base extends StatefulWidget {
   @override
   _BaseState createState() => _BaseState();
@@ -26,8 +20,7 @@ class _BaseState extends State<Base>
   List<TabIconData> tabIconsList = TabIconData.tabIconsList;
 
   Widget tabBody = Container(
-    //color: AppTheme.background,
-    color: Colors.blue,
+    color: AppTheme.background,
   );
 
   @override
@@ -56,7 +49,7 @@ class _BaseState extends State<Base>
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: FutureBuilder<bool>(
-          //future: getData(),
+          future: getData(),
           builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
             if (!snapshot.hasData) {
               return const SizedBox();
@@ -76,19 +69,8 @@ class _BaseState extends State<Base>
 
   Future<bool> getData() async {
     await Future<dynamic>.delayed(const Duration(milliseconds: 200));
-    ProductNotifier productNotifier = Provider.of<ProductNotifier>(context, listen: false);
-    //getProducts(productNotifier);
     return true;
   }
-//  Future getProducts(ProductNotifier productNotifier) async{
-//    QuerySnapshot snapshot = await Firestore.instance.collection('Products').getDocuments();
-//    List<Product> _productList = [];
-//    snapshot.documents.forEach((document){
-//      Product product = Product.fromMap(document.data);
-//      _productList.add(product);
-//    });
-//    productNotifier.productList = _productList;
-//  }
 
   Widget bottomBar() {
     return Column(
@@ -100,7 +82,7 @@ class _BaseState extends State<Base>
           tabIconsList: tabIconsList,
           addClick: () {},
           changeIndex: (int index) {
-            if (index == 0) {
+            if (index == 0 ) {
               animationController.reverse().then<dynamic>((data) {
                 if (!mounted) {
                   return;
@@ -110,7 +92,7 @@ class _BaseState extends State<Base>
                       MyCalendar(animationController: animationController);
                 });
               });
-            } else if (index == 1 ) {
+            } else if (index == 1) {
               animationController.reverse().then<dynamic>((data) {
                 if (!mounted) {
                   return;
@@ -120,7 +102,7 @@ class _BaseState extends State<Base>
                       ProductsScreen(animationController: animationController);
                 });
               });
-            }else if (index == 2 ) {
+            }else if (index == 2) {
               animationController.reverse().then<dynamic>((data) {
                 if (!mounted) {
                   return;
@@ -146,5 +128,4 @@ class _BaseState extends State<Base>
       ],
     );
   }
-
 }

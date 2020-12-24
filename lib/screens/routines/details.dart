@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myhairregimen/models/routine.dart';
+import 'file:///C:/Users/abuni/AndroidStudioProjects/my_hair_regimen/lib/models/routine/routine.dart';
 import 'package:myhairregimen/widgets/circle_indicator.dart';
 import '../../app_theme.dart';
 class DetailsPage extends StatelessWidget {
@@ -21,11 +21,13 @@ class DetailsPage extends StatelessWidget {
               flexibleSpace: FlexibleSpaceBar(
                 background: Hero(
                   tag: routine.id,
-                  child: FadeInImage(
-                    image: NetworkImage(
+                  child:
+                  //Image.asset('assets/media/curlpattern/1.png')
+                  FadeInImage(
+                    image: AssetImage(
                         routine.imageUrl),
                     fit: BoxFit.cover,
-                    placeholder: AssetImage('assets/images/loading.gif'),
+                    placeholder: AssetImage(routine.imageUrl),
                   ),
                 ),
               ),
