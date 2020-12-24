@@ -46,8 +46,8 @@ class DetailsPage extends StatelessWidget {
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 20)),
-                BenefitsWidget(
-                  benefits: routine.benefits,
+                Text(
+                   routine.benefits,
                 ),
                 Text('You\'ll need...',
                     style: TextStyle(

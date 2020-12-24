@@ -6,11 +6,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -31,11 +27,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -56,11 +48,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -81,11 +69,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -106,11 +90,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -131,11 +111,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -156,11 +132,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -181,11 +153,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -206,11 +174,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -231,11 +195,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -256,11 +216,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -281,11 +237,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
@@ -306,11 +258,7 @@ class Data {
         title: 'Clarify/Shampoo',
         imageUrl:
         'assets/media/routine_images/details/shampoo.jpg',
-        benefits: [
-          Benefits(name: 'Scalp Health', weight: '200', percent: 1.0),
-          Benefits(name: 'Scalp PH', weight: '10gm', percent: 0.5),
-          Benefits(name: 'Unclogged Pores', weight: '50gm', percent: 0.9),
-        ],
+        benefits: "Washing your hair increases the PH value of your scalp and encourages a clean scalp",
         steps: [
           'Detangle before washing your hair either with your fingers, a wide tooth comb or a detangling brush',
           'Divide your hair into manageable sections.',
