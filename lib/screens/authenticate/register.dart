@@ -11,7 +11,7 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-  FirebaseAuth auth = FirebaseAuth.instance;
+  //FirebaseAuth auth = FirebaseAuth.instance;
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _pass = TextEditingController();
   final TextEditingController _verifyPass = TextEditingController();
@@ -99,7 +99,7 @@ class _RegisterState extends State<Register> {
                         print(password);
                         print(username);
                         print(verifyPassword);
-                        auth.createUserWithEmailAndPassword( email: email, password: password);
+                        //auth.createUserWithEmailAndPassword( email: email, password: password);
                         Navigator.push( context, MaterialPageRoute(builder: (context) => SignInOptions()),);
                       }
                     },
@@ -120,7 +120,7 @@ class _RegisterState extends State<Register> {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Register()));
+            context, MaterialPageRoute(builder: (context) => SignInOptions()));
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20),

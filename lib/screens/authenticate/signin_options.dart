@@ -31,7 +31,7 @@ class _SignInOptionsState extends State<SignInOptions> {
   String email = '';
   String password = '';
   String verifyPassword = '';
-  FirebaseAuth auth = FirebaseAuth.instance;
+  //FirebaseAuth auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -95,8 +95,8 @@ class _SignInOptionsState extends State<SignInOptions> {
                 icon: Icons.email,
                   onPressed: () async {
                     try {
-                      FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password);
-                      FirebaseAuth.instance.currentUser.updateProfile(displayName:username);
+                      //FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password);
+                      //FirebaseAuth.instance.currentUser.updateProfile(displayName:username);
                       Navigator.push(context, MaterialPageRoute(builder: (context) => AuthWrapper()),);
                     } catch (e) {
                       print(e);
