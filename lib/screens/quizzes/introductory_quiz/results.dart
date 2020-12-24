@@ -1,6 +1,5 @@
 import 'package:myhairregimen/models/intro_quiz_answers.dart';
 import 'package:myhairregimen/models/product_list_data.dart';
-import 'package:myhairregimen/screens/authenticate/loginPage.dart';
 import 'package:myhairregimen/screens/authenticate/signin_options.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

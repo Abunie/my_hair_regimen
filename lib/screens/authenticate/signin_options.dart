@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:myhairregimen/screens/auth_wrapper.dart';
+import 'package:myhairregimen/screens/calendar/calendar.dart';
 import 'package:myhairregimen/screens/authenticate/register.dart';
 import 'package:flutter/material.dart';
 import 'package:myhairregimen/app_theme.dart';
@@ -97,7 +97,7 @@ class _SignInOptionsState extends State<SignInOptions> {
                     try {
                       //FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password);
                       //FirebaseAuth.instance.currentUser.updateProfile(displayName:username);
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AuthWrapper()),);
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => MyCalendar()),);
                     } catch (e) {
                       print(e);
                       username = "";
